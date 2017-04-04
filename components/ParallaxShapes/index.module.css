@@ -1,0 +1,35 @@
+.container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.shapes,
+.content {
+  position: absolute;
+}
+
+.content {
+  transform: translateZ(0);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 5000px;
+}
+
+.shapes {
+  transform: translateZ(-1px) scale(2);
+}
+
+.shape1 {
+  top: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(2) translate(25%, -30%);
+}
+
+.shape2 {
+  right: 0;
+  transform: translateZ(-2px) scale(2);
+}

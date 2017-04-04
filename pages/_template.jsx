@@ -27,9 +27,7 @@ module.exports = React.createClass({
 
     return (
       <div>
-        <Container>
           {this.props.children}
-        </Container>
       </div>
     )
   },
