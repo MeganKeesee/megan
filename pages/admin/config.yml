@@ -8,10 +8,13 @@ media_folder: "assets/images"
 collections:
 - name: "articles" # Used in routes, ie.: /admin/collections/:slug/edit
   label: "Article" # Used in the UI, ie.: "New Article"
-  file: "data/articles.json"
-  description: "List of articles that appear on the homepage"
-  fields:
-    - {label: "Publisher", name: "publisher", widget: "string"}
-    - {label: "Date Posted", name: "date", widget: "datepicker"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "url", name: "url", widget: "string"}
+  files:
+    - name: "Homepage"
+      label: "Articles"
+      file:  "data/articles.json"
+      description: "List of articles that appear on the homepage"
+      fields:
+        - {label: "Publisher", name: "publisher", widget: "string"}
+        - {label: "Date Posted", name: "date", widget: "datepicker"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "url", name: "url", widget: "string"}
