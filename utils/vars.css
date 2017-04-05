@@ -3,7 +3,8 @@
   --spacing-normal: 1.636rem;
   --spacing-small: 0.818rem;
   --spacing-smaller: 0.682rem;
-  --gutter: var(--spacing-normal);
+  --spacing-smallest: 0.364rem;
+  --gutter: var(--spacing-large);
   --max-width: 65.455rem;
   /* stylelint-disable color-no-hex */
   --color-link: #3341d8;
@@ -30,6 +31,7 @@
     --spacing-normal: 2.728rem;
     --spacing-small: 1.364rem;
     --spacing-smaller: 0.682rem;
+    --gutter: var(--spacing-normal);
   }
 }
 

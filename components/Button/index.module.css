@@ -47,12 +47,7 @@
   }
 
   &:active {
-    opacity: 0;
-  }
-
-  /* Lets animation play through after click */
-  &:not(:active)::before {
-    animation: pulse 1 300ms ease-out;
+    transform: scale(0.975);
   }
 }
 

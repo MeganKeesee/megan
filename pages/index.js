@@ -46,21 +46,16 @@ export default class Index extends React.Component {
         </section>
 
         <section className={`${g.maxWidth} ${g.spaceBetween} ${g.flexWrap}`}>
-          <div className={`${g.g6s}`}>
+          <div className={`${g.g6m}`}>
             <h2 className="h4">Biography</h2>
             <p>I’ve developed thought leadership for startups, enterprises and institutions from seven countries and developed speaking opportunities for C-suite executives. I’ve partnered with cross-functional teams to manage multiple brands, projects, timelines and budgets.</p>
 
             <p>I currently work with early stage startups to cultivate key messaging and media campaigns in local, national and international markets. As a PR Manager at Liberty Communications, I’ve lead media relations programs that have yielded 16K+ pieces of unique media coverage and create byline content for leading publications.</p>
 
-            <p>Prior to Liberty Communications, I was an account executive supporting ongoing public relations programs, product launches, and event logistics for a variety of tech clients at The OutCast Agency. While there, I helped launch three companies out of stealth. Additionally, I managed speaking and awards programs and helped brands build a digital presence via blog and social media content.</p>
-
-            <p>I also serve on the Board of Directors for the US National Committee for United Nations Women, which satisfies my passion for gender equality, advocacy and social good</p>
-
-            <p>I live in San Francisco with my dog, boyfriend and our Australian roommate. I speak three languages. I’m a *very* amateur snowboarder, rock climber and runner. I’m always down for an outdoor adventure.</p>
             <p><Button href="/resume.pdf" target="_blank">Download Resume</Button></p>
           </div>
 
-          <div className={`${g.g6s}`}>
+          <div className={`${g.g6m} ${g.marginTopLargeM}`}>
            <h2 className="h4">Latest Writing</h2>
            <WritingList />
           </div>
@@ -71,7 +66,7 @@ export default class Index extends React.Component {
          <BrandList />
         </section>
 
-        <Footer className={`${g.maxWidth} ${g.marginTopLarge}`}/>
+        <Footer className={`${g.maxWidth}`}/>
       </ParallaxShapes>
     )
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import g from '../../utils/grid.module.css'
+import g from '../../utils/grid.module.css';
+import s from './index.module.css';
 
 // Brand Images
 import facebook from '../../assets/images/client-facebook.svg';
@@ -19,12 +20,12 @@ const Client = (client) => (
 export default class BrandList extends React.Component {
 
   render () {
-    const clients = [facebook, box, amazon, starship, jawbone, walmart, dooap, wire];
+    const clients = [facebook, box, amazon, starship, dooap, walmart,jawbone, wire];
 
     const {children, ...props } = this.props;
 
     return (
-      <div className={`${g.spaceBetween} ${g.flexWrap} ${g.marginLeft}`}>
+      <div className={`${g.spaceBetween} ${g.flexWrap} ${s.container}`}>
         {clients.map(function(name, index){
             return (
               <div key={index}>
@@ -32,6 +33,7 @@ export default class BrandList extends React.Component {
               </div>
             );
         })}
+        <div className={`${g.flexChildHack}`}/>
       </div>
     )
   }

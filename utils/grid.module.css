@@ -13,9 +13,13 @@
 /* Finally, we need padding around the bottom of the page.
  * This is the only exception to our single-direction spacing convention.*/
 /* stylelint-disable property-blacklist */
-:root > *:last-child {
-  margin-bottom: var(--spacing-smaller);
+[data-reactroot] > * {
+  padding-bottom: var(--spacing-smaller);
   /* stylelint-enable property-blacklist */
+}
+
+* + .marginTopSmallest {
+  margin-top: var(--spacing-smallest);
 }
 
 * + .marginTopSmaller {
@@ -86,8 +90,28 @@ p + p {
   flex-wrap: wrap;
 }
 
+* + .flexChildHack {
+  width: 25%;
+  margin: 0 !important;
+}
+
+.noOrphan {
+  white-space: nowrap;
+}
+
 section + section {
   margin-top: var(--spacing-large);
+}
+
+section + footer {
+  /* Optically compensating for svg images with large containers */
+  margin-top: calc(var(--spacing-large) - 1rem);
+}
+
+@media (--medium-bp-max) {
+  * + .marginTopLargeM {
+    margin-top: var(--spacing-large);
+  }
 }
 
 @media (--small-bp) {
@@ -213,8 +237,8 @@ section + section {
   margin-right: 1rem;
   margin-left: 1rem;
 
-  @media (--small-bp) {
-    width: calc(100% - var(--gutter)*2);
+  @media (--large-bp) {
+    width: calc(100% - var(--gutter) * 2);
     margin-right: auto;
     margin-left: auto;
   }

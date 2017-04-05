@@ -5,8 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: calc(100vh - var(--spacing-large));
-  padding-top: var(--gutter);
-  padding-bottom: var(--gutter);
+  padding-top: var(--spacing-normal);
 }
 
 .homename {
@@ -15,7 +14,7 @@
 
 .given,
 .surname {
-  display: inline-block;
+  display: block;
   vertical-align: top;
 }
 
