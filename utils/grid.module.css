@@ -62,6 +62,10 @@
   margin-top: calc(var(--spacing-small) - var(--cap-height));
 }
 
+p + p {
+  margin-top: var(--spacing-small);
+}
+
 .spaceBetween {
   display: flex;
   justify-content: space-between;

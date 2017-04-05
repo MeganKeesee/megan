@@ -74,21 +74,7 @@ h1 {
   }
 }
 
-h2 {
-  font-family: var(--font-family-sans-serif);
-  font-size: 1.777rem;
-  line-height: 1.016;
-  font-weight: 200;
-
-  @media (--small-bp) {
-    font-size: calc(1.777rem + 0.905 * ((100vw - 22.727rem) / 31));
-  }
-
-  @media (--large-bp) {
-    font-size: 2.682rem;
-  }
-}
-
+h2,
 h3 {
   font-family: 'GT Sectra', 'Georgia', serif;
   font-size: 1.333rem;
@@ -106,6 +92,16 @@ h3 {
   @media (--large-bp) {
     font-size: 1.636rem;
   }
+}
+
+h2 {
+  font-family: var(--font-family-sans-serif);
+  font-weight: 200;
+}
+
+h3 {
+  font-family: 'GT Sectra', 'Georgia', serif;
+  font-weight: 300;
 }
 
 h4,
