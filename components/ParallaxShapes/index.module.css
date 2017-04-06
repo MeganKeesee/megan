@@ -18,7 +18,7 @@
   
   @media (--large-bp) {
     transform: translate(50%,-81%) rotate(-8deg) scale(2);
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 
@@ -28,8 +28,8 @@
   transform: translate(-40%, 62%) rotate(-20deg) scale(2.5, 1);
 
   @media (--large-bp) {
-    transform: translate(-40%, 64%) rotate(-9deg) scale(2.5, 1);
-    opacity: 0.7;
+    transform: translate(-37%, 68%) rotate(-2deg) scaleX(2);
+    opacity: 0.9;
   }
 }
 
@@ -54,6 +54,6 @@
     bottom: -1%;
     left: initial;
     transform: scale(3) rotate(-550deg);
-    opacity: 0.54
+    opacity: 0.8;
   }
 }

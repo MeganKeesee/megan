@@ -9,6 +9,7 @@
   /* stylelint-enable unit-blacklist */
   border-radius: 0.409em;
   color: inherit;
+  font-family: var(--font-family-sans-serif);
   font-weight: 800;
   letter-spacing: var(--letter-spacing);
   cursor: pointer;
@@ -47,7 +48,9 @@
   }
 
   &:active {
-    transform: scale(0.975);
+    /* stylelint-disable unit-blacklist */
+    transform: translateY(1px) scale(0.99);
+    /* stylelint-enable unit-blacklist */
   }
 }
 

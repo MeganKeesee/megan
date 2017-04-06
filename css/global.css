@@ -59,6 +59,10 @@ body {
   margin-top: 0;
 }
 
+*::selection {
+  background-color: #F8D7F5;
+}
+
 h1 {
   font-family: var(--font-family-display);
   font-size: 2.369rem;
@@ -106,6 +110,7 @@ h3 {
 
 h4,
 .h4 {
+  font-family: var(--font-family-sans-serif);
   font-size: inherit;
   font-weight: 800;
   letter-spacing: 0.091em;

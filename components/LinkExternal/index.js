@@ -7,7 +7,6 @@ let cx = classNames.bind(s);
 
 export default class LinkExternal extends React.Component {
 
-
   static propTypes = {
     className: PropTypes.string,
     unstyled: PropTypes.bool
@@ -24,7 +23,7 @@ export default class LinkExternal extends React.Component {
       external: !this.props.unstyled,
     });
 
-    const {children, href, ...props } = this.props;
+    const {children, classname, href, ...props } = this.props;
 
     return (
       <a href={href} target="_blank" rel="noopener" className={className}>

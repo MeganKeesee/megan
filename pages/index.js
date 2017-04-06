@@ -4,6 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import { config } from 'config';
 import ParallaxShapes from '../components/ParallaxShapes';
+import LinkExternal from '../components/LinkExternal';
+import Email from '../components/Email';
 import BrandList from '../components/BrandList';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
@@ -36,10 +38,7 @@ export default class Index extends React.Component {
             <h2 className={`${g.g9m} ${g.g7l}`}>{config.tagline}</h2>
           
             <div className={`${g.spaceBetween} ${g.flexEnd} ${g.flexWrap}`}>
-              <div>
-                <h4>Get in Touch</h4>
-                <h3><a href="mailto:hello@megankeesee.com">hello@megankeesee.com</a></h3>
-              </div>
+              <Email />
               <SocialIcons className={`${g.marginTopSmall}`} />
             </div>
           </div>
@@ -47,12 +46,13 @@ export default class Index extends React.Component {
 
         <section className={`${g.maxWidth} ${g.spaceBetween} ${g.flexWrap}`}>
           <div className={`${g.g6m}`}>
-            <h2 className="h4">Biography</h2>
-            <p>I’ve developed thought leadership for startups, enterprises and institutions from seven countries and developed speaking opportunities for C-suite executives. I’ve partnered with cross-functional teams to manage multiple brands, projects, timelines and budgets.</p>
+            <h2 className="h4">About</h2>
+            
+            <p>Communications manager based in San Francisco, Ca. Currently at Liberty Communications helping international early-stage startups enter the US market. Previously at The Outcast Agency, where I helped launch two companies out of stealth.</p>
 
-            <p>I currently work with early stage startups to cultivate key messaging and media campaigns in local, national and international markets. As a PR Manager at Liberty Communications, I’ve lead media relations programs that have yielded 16K+ pieces of unique media coverage and create byline content for leading publications.</p>
+            <p>Also serving on the Board of Directors for the US National Committee for United Nations Women.</p>
 
-            <p><Button href="/resume.pdf" target="_blank">Download Resume</Button></p>
+            <p className={`${g.marginTopSmall}`}><Button href="/resume.pdf" target="_blank">Download Resume</Button></p>
           </div>
 
           <div className={`${g.g6m} ${g.marginTopLargeM}`}>

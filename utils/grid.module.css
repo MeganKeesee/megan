@@ -109,6 +109,7 @@ section + footer {
 }
 
 @media (--medium-bp-max) {
+
   * + .marginTopLargeM {
     margin-top: var(--spacing-large);
   }

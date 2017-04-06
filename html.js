@@ -28,6 +28,28 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="http://megankesee.com" />
+          <meta property="og:title" content="Megan Keesee, Communications Manager" />
+          <meta property="og:image" content="https://megankesee.com/image-og.jpg" />
+          <meta property="og:description" content="Megan Keesee is a communications manager based in San Francisco, California." />
+          <meta property="og:site_name" content="Megan Keesee, Communications Manager" />
+          <meta property="og:locale" content="en_US" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@megankesee" />
+          <meta name="twitter:creator" content="@megankesee" />
+          <meta name="twitter:url" content="https://megankesee.com" />
+          <meta name="twitter:title" content="Megan Keesee, Communications Manager" />
+          <meta name="twitter:description" content="Megan Keesee is a communications manager based in San Francisco, California." />
+          <meta name="twitter:image" content="https://megankeesee.com/image-twitter.jpg" />
+
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+          <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f683f4" />
+          <meta name="theme-color" content="#f683f4" />
           {head.title.toComponent()}
           {head.meta.toComponent()}
           {css}

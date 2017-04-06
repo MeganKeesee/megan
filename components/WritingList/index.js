@@ -17,8 +17,8 @@ let chronologicalArticles = articles.sort(function(a, b){
 });
 
 const WritingItem = ({publisher, date, title, url}) => (
-  <li>
-    <LinkExternal href={url} unstyled>
+  <li className={`${s.writingItem}`}>
+    <LinkExternal href={url} unstyled >
       <p className={`${s.byline}`}>
         <span className={`${s.border}`}>{publisher}</span> on <span className={`${g.noOrphan}`}>{date}</span>
       </p>

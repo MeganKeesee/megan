@@ -1,5 +1,15 @@
 @import '../../utils/vars.css';
 
+.writingItem {
+
+  &:hover {
+
+    & .border::after {
+       background-image: linear-gradient(225deg, var(--color-highlight-start) 0%, var(--color-highlight-end) 100%);
+    }
+  }
+}
+
 .border {
   position: relative;
   font-weight: 800;
