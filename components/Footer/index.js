@@ -12,7 +12,7 @@ export default class BrandList extends React.Component {
 
     return (
       <footer className={cx(className) + ``}>
-        <div className={`${g.spaceBetween} ${g.flexEnd}`}>
+        <div className={`${g.spaceBetween} ${g.flexEnd} ${g.flexWrap}`}>
           <Email /><SocialIcons />
         </div>
         <p className={`${g.marginTopSmaller}`}>Site is open source on <LinkExternal href="https://github.com">Github</LinkExternal> and deployed with <LinkExternal href="https://netlify.com">Netlify.</LinkExternal></p>
