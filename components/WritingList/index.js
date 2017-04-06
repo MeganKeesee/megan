@@ -32,8 +32,6 @@ export default class WritingList extends React.Component {
 
     const {children, ...props } = this.props;
 
-    console.log(articles);
-
     return (
       <ul>
         {articles.slice(0, 5).map((article, index) =>

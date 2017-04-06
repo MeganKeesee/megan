@@ -9,6 +9,8 @@
   position: absolute;
   margin: 0;
   z-index: -5;
+  pointer-events: none;
+  user-select: none;
 }
 
 .first {
@@ -54,6 +56,5 @@
     bottom: -1%;
     left: initial;
     transform: scale(3) rotate(-550deg);
-    opacity: 0.8;
   }
 }

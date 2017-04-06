@@ -1,9 +1,10 @@
-import React from 'react'
-import { Container } from 'react-responsive-grid'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
-import '../css/global'
+import React from 'react';
+import { Container } from 'react-responsive-grid';
+import { Link } from 'react-router';
+import { prefixLink } from 'gatsby-helpers';
+import Headroom from 'react-headroom';
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+import '../css/global';
 
 module.exports = React.createClass({
 
@@ -49,4 +50,6 @@ module.exports = React.createClass({
       </div>
     )
   },
+
 })
+

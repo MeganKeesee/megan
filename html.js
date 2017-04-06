@@ -1,10 +1,12 @@
-import React from 'react'
-import Helmet from "react-helmet"
-import { prefixLink } from 'gatsby-helpers'
+import React from 'react';
+import Helmet from "react-helmet";
+import { prefixLink } from 'gatsby-helpers';
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 
 const BUILD_TIME = new Date().getTime()
 
 module.exports = React.createClass({
+
   propTypes () {
     return {
       body: React.PropTypes.string,
@@ -17,6 +19,12 @@ module.exports = React.createClass({
     let css
     if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+    }
+
+    try {
+      OfflinePluginRuntime.install();
+    } catch (e) {
+      console.log(e)
     }
 
     return (

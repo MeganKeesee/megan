@@ -7,6 +7,7 @@
   /* stylelint-disable unit-blacklist */
   padding: 4px;
   /* stylelint-enable unit-blacklist */
+  clip: rect(0, 0, 0, 0);
   border-radius: 0.409em;
   color: inherit;
   font-family: var(--font-family-sans-serif);
@@ -14,6 +15,10 @@
   letter-spacing: var(--letter-spacing);
   cursor: pointer;
   overflow: hidden;
+  /* Removes the 300ms delay on touch-enabled devices. */
+  touch-action: manipulation;
+  /* Disables the selection of text on mobile so that we better reconigize a user is clicking on a link */
+  user-select: none;
 
   &:hover {
     
@@ -56,7 +61,7 @@
 
 .inside {
   display: block;
-  padding: var(--spacing-smaller);
+  padding: calc(var(--spacing-smaller) + 3px) var(--spacing-smaller) var(--spacing-smaller);
   border-radius: 0.318em;
   background-image: linear-gradient(-150deg, var(--color-background-start) 0%, var(--color-background-end) 75%);
   text-transform: uppercase;

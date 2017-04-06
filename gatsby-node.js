@@ -1,3 +1,4 @@
+const OfflinePlugin = require('offline-plugin');
 
 exports.modifyWebpackConfig = function(config, env) {
 
@@ -11,6 +12,8 @@ exports.modifyWebpackConfig = function(config, env) {
             ]
     },
   })
+
+  config.plugin('offline-plugin', OfflinePlugin, []);
 
   return config
 }
