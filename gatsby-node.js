@@ -13,6 +13,12 @@ exports.modifyWebpackConfig = function(config, env) {
     },
   })
 
+  config.loader('url-loader', function(cfg) {
+    cfg.test = /\.(mp4|webm|wav|mp3|m4a|aac|oga|pdf)(\?.*)?$/,
+    cfg.loader = 'url'
+    return cfg
+  })
+
   config.plugin('offline-plugin', OfflinePlugin, []);
 
   return config

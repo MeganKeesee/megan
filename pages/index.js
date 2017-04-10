@@ -16,6 +16,8 @@ import WritingList from '../components/WritingList';
 import s from './index.module.css';
 import g from '../utils/grid.module.css';
 
+import resume from '../assets/files/resume.pdf';
+
 export default class Index extends React.Component {
   render () {
     return (
@@ -52,7 +54,7 @@ export default class Index extends React.Component {
 
             <p>Also serving on the Board of Directors for the US National Committee for United Nations Women.</p>
 
-            <p className={`${g.marginTopSmall}`}><Button href="/resume.pdf" target="_blank">Download Resume</Button></p>
+            <p className={`${g.marginTopSmall}`}><Button href={resume} target="_blank">Download Resume</Button></p>
           </div>
 
           <div className={`${g.g6m} ${g.marginTopLargeM}`}>

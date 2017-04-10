@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import cx from 'classnames';
 import Sparkle from '../Sparkle';
 
@@ -6,13 +6,19 @@ import Sparkle from '../Sparkle';
 import s from './index.module.css';
 
 export default class Button extends React.Component {
+
+  static propTypes = {
+    className: PropTypes.string,
+    href: PropTypes.string.isRequired,
+  };
+
   render () {
 
-    const {className, children, ...props } = this.props;
+    const {className, children, href} = this.props;
 
     return (
       <Sparkle>
-        <a className={cx(s.button, className) + ``}>
+        <a className={cx(s.button, className) + ``} href={href}>
           <span className={`${s.inside}`}>{children}</span>
         </a>
       </Sparkle>
