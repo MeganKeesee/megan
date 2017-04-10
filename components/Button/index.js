@@ -18,7 +18,7 @@ export default class Button extends React.Component {
 
     return (
       <Sparkle>
-        <a className={cx(s.button, className) + ``} href={href}>
+        <a className={cx(s.button, className) + ``} href={href}  target="_blank">
           <span className={`${s.inside}`}>{children}</span>
         </a>
       </Sparkle>

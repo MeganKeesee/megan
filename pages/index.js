@@ -54,7 +54,7 @@ export default class Index extends React.Component {
 
             <p>Also serving on the Board of Directors for the US National Committee for United Nations Women.</p>
 
-            <p className={`${g.marginTopSmall}`}><Button href={resume} target="_blank">Download Resume</Button></p>
+            <p className={`${g.marginTopSmall}`}><Button href={resume}>Download Resume</Button></p>
           </div>
 
           <div className={`${g.g6m} ${g.marginTopLargeM}`}>
